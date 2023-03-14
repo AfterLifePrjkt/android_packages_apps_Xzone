@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.banana.settings.fragments;
+package com.xzone.settings.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -32,13 +32,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class StatusBar extends SettingsPreferenceFragment implements
+public class Lockscreen extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.bg_statusbar);
+        addPreferencesFromResource(R.xml.bg_lockscreen);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -47,7 +47,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BANANADROID;
+        return MetricsProto.MetricsEvent.XZONE;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -59,7 +59,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.bg_statusbar;
+                    sir.xmlResId = R.xml.bg_lockscreen;
                     result.add(sir);
                     return result;
                 }

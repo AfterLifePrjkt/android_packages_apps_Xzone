@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.banana.settings.fragments;
+package com.xzone.settings.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -32,13 +32,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class Navigations extends SettingsPreferenceFragment implements
+public class StatusBar extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.bg_navigation);
+        addPreferencesFromResource(R.xml.bg_statusbar);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -47,7 +47,7 @@ public class Navigations extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BANANADROID;
+        return MetricsProto.MetricsEvent.XZONE;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
@@ -59,7 +59,7 @@ public class Navigations extends SettingsPreferenceFragment implements
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.bg_navigation;
+                    sir.xmlResId = R.xml.bg_statusbar;
                     result.add(sir);
                     return result;
                 }

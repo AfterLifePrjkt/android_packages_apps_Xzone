@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.banana.settings;
+package com.xzone.settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -28,18 +28,18 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class BananaGear extends SettingsPreferenceFragment {
+public class xzone extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.bananagear);
+        addPreferencesFromResource(R.xml.xzone);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BANANADROID;
+        return MetricsProto.MetricsEvent.XZONE;
     }
 
     public static void lockCurrentOrientation(Activity activity) {

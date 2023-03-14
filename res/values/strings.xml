@@ -15,7 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="bananagear_title">Banana Gear</string>
+    <string name="xzone_title">Xzone</string>
 
     <!-- Categories -->
     <string name="lockscreen_title">Lock screen</string>

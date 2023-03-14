@@ -15,14 +15,14 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/bananagear_title" >
+    android:title="@string/xzone_title" >
 
         <!-- Status Bar -->
         <PreferenceScreen
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:summary="@string/statusbar_title_summary"
-            android:fragment="com.banana.settings.fragments.StatusBar" 
+            android:fragment="com.xzone.settings.fragments.StatusBar" 
             android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
@@ -30,7 +30,7 @@
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:summary="@string/quicksettings_title_summary"
-            android:fragment="com.banana.settings.fragments.QuickSettings"
+            android:fragment="com.xzone.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Navigation Bar -->
@@ -38,7 +38,7 @@
             android:key="navigationbar_category"
             android:title="@string/navbar_title"
             android:summary="@string/navbar_title_summary" 
-            android:fragment="com.banana.settings.fragments.Navigations"
+            android:fragment="com.xzone.settings.fragments.Navigations"
             android:icon="@drawable/ic_settings_navbar"/>
 
         <!-- Lock Screen -->
@@ -46,7 +46,7 @@
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_title_summary" 
-            android:fragment="com.banana.settings.fragments.Lockscreen"
+            android:fragment="com.xzone.settings.fragments.Lockscreen"
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Misc -->
@@ -54,7 +54,7 @@
             android:key="misc_category"
             android:title="@string/misc_title"
             android:summary="@string/misc_title_summary"
-            android:fragment="com.banana.settings.fragments.Misc"
+            android:fragment="com.xzone.settings.fragments.Misc"
             android:icon="@drawable/ic_settings_miscs"/>
 
 </PreferenceScreen>

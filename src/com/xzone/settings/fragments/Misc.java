@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.banana.settings.fragments;
+package com.xzone.settings.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -47,7 +47,7 @@ public class Misc extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BANANADROID;
+        return MetricsProto.MetricsEvent.XZONE;
     }
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
